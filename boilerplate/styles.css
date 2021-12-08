@@ -1,0 +1,62 @@
+p {
+    color: red;
+
+}
+
+p {
+    color: orange !important;
+}
+
+#greater {
+    font-size: 16px;
+}
+.great {
+    font-style: italic;
+    font-size: 24px;
+}
+
+.fantastic {
+    border: 1px solid brown;
+}
+
+#no-underline{
+    text-decoration: none;
+}
+
+p {
+    color: green;
+    font-size: 36px;
+}
+
+.btn {
+    font-size: 30px;
+    border: 1px sold black;
+    color: white;
+}
+
+.btn-success {
+    background-color: green
+}
+
+.btn-danger {
+    background-color: red;
+}
+
+.leia {
+    font-weight: bold;
+    border: 1px dotted purple;
+}
+
+
+.leia::after {
+    content: "i can arrange that!";
+}
+
+a {
+    color: brown;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: lightsalmon;
+}

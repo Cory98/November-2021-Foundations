@@ -2,40 +2,47 @@
 <html>
     <head>
         <title>My First Web Page</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <style>
+        body {
+            background-color: lightgreen;
+        }
+        </style>
     </head>
     <body>
         <header>
             <nav>
                 <a href="#">Home</a>
-                <a href="http://www.google.com">Google</a>
+                <a id="no-underline" href="http://www.google.com">Google</a>
                 <a href="http:/www.youtube.com" target="_blank">Youtube</a>
                 <a href="#">About</a>
                 <a href="#">Contact</a>
                 <a href="#help">Help</a>
             </nav>
-            <h1>My First Web Page</h1>
+            <h1 style="color: blue; text-decoration: underline;">My First Web Page</h1>
         </header>
         <main>
-            <h2>about me</h2>
+            <h2 class="fantastic">about me</h2>
             <article> 
                 <section>
                     <h3>Before Coding</h3>
                 </section>
                 <section>
-                    <h3>After Coding</h3>
+                    <h3 class="fantastic">After Coding</h3>
                 </section>
                 <a href="http://www.ducks.org" target=_blank><img src="https://images.unsplash.com/photo-1465153690352-10c1b29577f8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2630&q=80" alt="duck" width=200></a>
                 <div>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fringilla, urna ac tincidunt porttitor, lectus mauris iaculis turpis, dictum finibus leo arcu vel risus. Phasellus in auctor dolor, sed rutrum nulla. Cras sit amet ex a orci euismod tempor. Nulla vehicula tellus mattis diam faucibus interdum. Pellentesque convallis leo in lectus tincidunt, id maximus nulla dapibus. Donec pharetra semper quam non molestie. Duis porttitor purus ut purus tincidunt, tincidunt ullamcorper eros malesuada. Vestibulum eleifend, diam a ullamcorper blandit, purus est lobortis quam, sed fringilla turpis erat in nisl.
                     </p>
-                    <p>
+                    <p class="great" id="greater">
                         Duis ac gravida nunc, vel condimentum purus. Ut elementum sapien at turpis maximus, sit amet euismod leo fermentum. Aliquam nec aliquam elit. Cras porta mi ac massa pellentesque ornare. Proin ut imperdiet nulla. In ut augue id velit commodo aliquam. Curabitur non porta libero. Mauris iaculis dapibus arcu, a feugiat nulla dapibus non. Curabitur quis erat nisl.
                     </p>
                     <p>
                         Aliquam cursus convallis velit, id hendrerit ligula accumsan nec. Ut pretium eros in justo laoreet tempus. Mauris venenatis dui quis lectus laoreet pulvinar. Morbi lobortis massa sit amet varius blandit. Duis tempus aliquam ante ut accumsan. Curabitur eget libero quis urna vehicula eleifend ac eget odio. Pellentesque diam neque, accumsan iaculis velit quis, malesuada lacinia nisl. In ornare urna sit amet lacus dapibus malesuada. Cras egestas, ante et euismod fermentum, magna ex dictum lorem, sed elementum odio ex at magna. Quisque vitae consequat risus.
                     </p>
-                    <p>
+                    <p class= "great">
                         Aenean quis quam quis risus porta imperdiet. In vel porttitor lacus, ut tincidunt ligula. Nulla eu neque urna. Cras ac convallis eros. Fusce eu eros a erat lacinia pharetra nec ullamcorper nibh. Nunc fringilla ex a accumsan sagittis. Sed ultrices nibh et erat tristique rutrum. Praesent id condimentum justo, sit amet imperdiet justo. Cras vitae lectus vel ante aliquam lacinia.
                     </p>    
                     <p>
@@ -48,9 +55,15 @@
                 <h1>help section</h1>
                 <a href="mailto:david.tarvin@gmail.com?subject=Help%20Me&body=Can%20me">contact your contructor</a>
             </div>
+            <button class="btn btn-success">Okay!</button>
+            <button class="btn btn-danger">No WAy!</button>
         </main>
-        
-        <footer>
+        <div>
+            <p class="leia">
+                I'd rather kiss a Wookie!
+            </p>
+        </div>
+        <footer class="fantastic">
             Copyright 2021 Cory Elliott
         </footer>
     </body>
