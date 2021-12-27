@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background-clip example</title>
+    <style>
+        #example1, #example2, #example3 {
+            border: 10px dotted black;
+            background-color: lightblue;
+            padding: 15px;
+        }
+        #example1 {
+            background-clip: border-box;
+        }
+        #example3 {
+            background-clip: padding-box;
+        }
+        #example3 {
+            background-clip: content-box;
+        }
+    </style>
+</head>
+<body>
+    <p>background-clip: border-box (this is default)</p>
+    <div id="example1">
+        <p>The background extends behind the border</p>
+    </div>
+    <p>background-clip: padding-box</p>
+    <div id="example2">
+        <p>The background extends to the inside edge of the border</p>
+    </div>
+    
+    <p>background-clip: content-box</p>
+    <div id="example3">
+        <p>The background extends to the edger of the content box</p>
+    </div>
+</body>
+</html>

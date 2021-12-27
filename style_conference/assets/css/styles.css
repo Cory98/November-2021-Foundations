@@ -1,3 +1,9 @@
+/*
+===============================
+Custom styles
+===============================
+*/
+
 body {
   background: #11073fe3;
   color: rgb(39, 58, 110);
@@ -9,19 +15,6 @@ body {
   Grid
   ======================================
 */
-
-.group:before,
-.group:after{
-  content: "";
-  display: table;
-}
-.group:after {
-  clear: both;
-}
-.group{
-  clear: both;
-  *zoom: 1;
-}
 
 *,
 *:before,
@@ -36,46 +29,10 @@ body {
   margin: 0 auto;
   width:960px;
 }
+
 .container {
   padding-left: 30px;
   padding-right: 30px;
-}
-
-h1, h2, h3, h4, p {
-  margin-bottom: 22px;
-}
-
-.btn {
-  border-radius: 5px;
-  display: inline-block;
-  margin: 0;
-}
-
-.btn-alt{
-  border: 1px solid #dfe2e5;
-  padding: 10px 30px;
-}
-
-.hero {
-  padding: 22px 80px 66px 80px;
-}
-
-.logo {
-  border-top: 4px solid #d7dae2;
-  float: left;
-  margin-top: 4px;
-  padding-top: .5em;
-  padding-right: 1em;
-}
-
-.primary-footer {
-  padding-bottom: 44px;
-  padding-top: 44px;
-}
-
-.primary-footer small {
-  float: left;
-  font-weight: 400;
 }
 
 .col-1-3 {
@@ -98,3 +55,222 @@ h1, h2, h3, h4, p {
   padding-left: 15px;
   padding-right: 15px;
 }
+
+/*
+=======================
+Clearfix
+=======================
+*/
+
+.group:before,
+.group:after{
+  content: "";
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+.group{
+  clear: both;
+  *zoom: 1;
+}
+
+/*
+=======================
+Rows
+=======================
+*/
+
+/*
+=====================
+Typography
+=====================
+*/
+
+h1, h2, h3, h4, p {
+  margin-bottom: 22px;
+}
+h1, h2, h3, h4 {
+  color: #6c89db;
+}
+h1 {
+  font-size: 36px;
+  line-height: 44px;
+}
+h2 {
+  font-size: 24px;
+  line-height: 44px;
+}
+h3 {
+  font-size: 21px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  color: #4568c9;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+strong {
+  font-weight: 400;
+}
+cite,
+em {
+  font-style: italic;
+}
+a {
+  color: #6c89db;
+}
+a:hover {
+  color: #a9b2b9;
+}
+.tagline {
+  margin: 66px 0 22px 0;
+  text-align: right;
+}
+.primary-nav {
+font-size: 14px;
+font-weight: 400;
+letter-spacing: 0.5px;
+text-transform: uppercase;
+}
+.prinary-footer {
+  color: #6c89db;
+  font-size: 14px;
+  padding-bottom: 44px;
+  padding-top: 44px;
+}
+.prinary-footer small {
+  float: left;
+  font-weight: 400;
+}
+.teaser a:hover h3 {
+  color: #a9b2b9;
+}
+a {
+  color: #6c89db;
+  text-decoration: none;
+}
+a:hover {
+  color: #a9b2b9;
+}
+p a {
+  border-bottom: 1px solid #dfe2e5;
+}
+
+/*
+============================
+Leads
+============================
+*/
+
+/*
+============================
+Links
+============================
+*/
+
+/*
+============================
+Buttons
+============================
+*/
+
+.btn {
+  border-radius: 5px;
+  display: inline-block;
+  margin: 0;
+}
+
+.btn-alt{
+  border: 1px solid #dfe2e5;
+  padding: 10px 30px;
+}
+
+/*
+=======================
+Primary header
+=======================
+*/
+
+.logo {
+  border-top: 4px solid #d7dae2;
+  float: left;
+  margin-top: 4px;
+  padding-top: .5em;
+  padding-right: 1em;
+}
+
+/*
+====================
+Primary Footer
+====================
+*/
+
+/*
+=======================
+Navigation
+=======================
+*/
+
+.primary-footer {
+  padding-bottom: 44px;
+  padding-top: 44px;
+}
+
+.primary-footer small {
+  float: left;
+  font-weight: 400;
+}
+
+.nav {
+  text-align: right;
+}
+
+
+/*
+======================
+Home
+======================
+*/
+
+.hero {
+  line-height: 44px;
+  padding: 22px 80px 66px 80px;
+  text-align: center;
+}
+.hero h2 {
+  font-size: 36;
+}
+.hero p {
+  font-size: 24;
+  font-weight: 100;
+}
+
+/*
+======================
+Speakers
+======================
+*/
+
+/*
+=====================
+Schedule
+=====================
+*/
+
+/*
+=====================
+Venue
+=====================
+*/
+
+/*
+=====================
+Register
+=====================
+*/

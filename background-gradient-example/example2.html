@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient example 2</title>
+    <style>
+        div {
+            height: 200px;
+            width: 400px;
+            display: inline-block;
+        }
+        .fade-to-right {
+            background-image: linear-gradient(to right, white, blue;)
+        }
+        .fade-to-leftt {
+            background-image: linear-gradient(to right, white, blue;)
+        }
+        .fade-to-top {
+            background-image: linear-gradient(to right, white, blue;)
+        }
+        .fade-to-bottom-right {
+            background-image: linear-gradient(to right, white, darkred;)
+        }
+        .fade-to-68-degrees {
+            background-image: linear-gradient(68deg, white, purple)
+        }
+        .three-color-stops {
+            background-image: linear-gradient(90deg, red, white, blue;)
+        }
+        .three-specific-color-stops {
+            background-image: linear-gradient(90deg, red 0%, white 25%, blue 75%;)
+        }
+        .three-color-stops-stripes{
+            background-image: linear-gradient(90deg, red 40%, white 40%, white 60%, blue 60%;)
+        }
+        .barber-stripes {
+            display: block;
+            height: 1em;
+            width: 600px;
+            background-image: repeating-linear-gradient( -45deg, #57b, #57b, 10px, #465298 10px, #465298 20px;)
+        }
+        .radial-basic {
+            background-image: radial-gradient(white, blue;)
+        }
+        .radial-circle {
+            background-image: radial-gradient(white, midnightblue;)
+        }
+        .radial-sized-positioned {
+            background-image: radial-gradient(3em at 25% 25%, white, midnightblue;)
+        }
+        .radial-color-stops {
+            background-image: radial-gradient(circle, midnightblue 0%, white 75% red 100%;)
+        }
+        .radial-stripes {
+            height: 400px;
+            width: 400px;
+            border-radius: 50%;
+            background-image: radial-gradient(circle, red 0, red 1em, midnightblue 1em, white 1em, white 2em);
+        }
+    </style>
+</head>
+<body>
+    <div class="fade-to-right"></div>
+    <div class="fade-to-left"></div>
+    <div class="fade-to-top"></div>
+    <div class="fade-to-bottom-right"></div>
+    <div class="fade-to-68-degrees"></div>
+    <div class="three-color-stops"></div>
+    <div class="three-specific-color-stops"></div>
+    <div class="three-color-stops-stripes"></div>
+    <div class="barber-stripes"></div>
+    <div class="radial-basic"></div>
+    <div class="radial-circle"></div>
+    <div class="radial-sized-positioned"></div>
+    <div class="radial-color-stops"></div>
+    <div class="radial-stripes"></div> 
+</body>
+</html>
