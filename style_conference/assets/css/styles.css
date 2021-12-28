@@ -122,22 +122,6 @@ cite,
 em {
   font-style: italic;
 }
-.prinary-footer {
-  color: #6c89db;
-  font-size: 14px;
-  padding-bottom: 44px;
-  padding-top: 44px;
-}
-.prinary-footer small {
-  float: left;
-  font-weight: 400;
-}
-.teaser a:hover h3 {
-  color: #a9b2b9;
-}
-p a {
-  border-bottom: 1px solid #dfe2e5;
-}
 
 /*
 ============================
@@ -150,6 +134,7 @@ Leads
 Links
 ============================
 */
+
 a {
   color: #6c89db;
   text-decoration: none;
@@ -157,6 +142,10 @@ a {
 a:hover {
   color: #a9b2b9;
 }
+p a {
+  border-bottom: 1px solid #dfe2e5;
+}
+
 /*
 ============================
 Buttons
@@ -243,7 +232,9 @@ Home
   font-size: 24px;
   font-weight: 100;
 }
-
+.teaser a:hover h3 {
+  color: #a9b2b9;
+}
 /*
 ======================
 Speakers
