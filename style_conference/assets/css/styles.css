@@ -89,7 +89,7 @@ Typography
 =====================
 */
 
-h1, h2, h3, h4, p {
+h1, h5, h3, h4, p {
   margin-bottom: 22px;
 }
 h1, h2, h3, h4 {
@@ -122,22 +122,6 @@ cite,
 em {
   font-style: italic;
 }
-a {
-  color: #6c89db;
-}
-a:hover {
-  color: #a9b2b9;
-}
-.tagline {
-  margin: 66px 0 22px 0;
-  text-align: right;
-}
-.primary-nav {
-font-size: 14px;
-font-weight: 400;
-letter-spacing: 0.5px;
-text-transform: uppercase;
-}
 .prinary-footer {
   color: #6c89db;
   font-size: 14px;
@@ -149,13 +133,6 @@ text-transform: uppercase;
   font-weight: 400;
 }
 .teaser a:hover h3 {
-  color: #a9b2b9;
-}
-a {
-  color: #6c89db;
-  text-decoration: none;
-}
-a:hover {
   color: #a9b2b9;
 }
 p a {
@@ -173,7 +150,13 @@ Leads
 Links
 ============================
 */
-
+a {
+  color: #6c89db;
+  text-decoration: none;
+}
+a:hover {
+  color: #a9b2b9;
+}
 /*
 ============================
 Buttons
@@ -187,7 +170,7 @@ Buttons
 }
 
 .btn-alt{
-  border: 1px solid #dfe2e5;
+  border: 1px solid #fff;
   padding: 10px 30px;
 }
 
@@ -204,17 +187,15 @@ Primary header
   padding-top: .5em;
   padding-right: 1em;
 }
+.tagline {
+  margin: 66px 0 22px 0;
+  text-align: right;
+}
 
 /*
 ====================
 Primary Footer
 ====================
-*/
-
-/*
-=======================
-Navigation
-=======================
 */
 
 .primary-footer {
@@ -227,6 +208,18 @@ Navigation
   font-weight: 400;
 }
 
+/*
+=======================
+Navigation
+=======================
+*/
+.primary-nav {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  }
+  
 .nav {
   text-align: right;
 }
@@ -244,10 +237,10 @@ Home
   text-align: center;
 }
 .hero h2 {
-  font-size: 36;
+  font-size: 36px;
 }
 .hero p {
-  font-size: 24;
+  font-size: 24px;
   font-weight: 100;
 }
 
