@@ -218,11 +218,11 @@ Primary header
   font-weight: 400;
 }
 
-primary-header a {
+.primary-header a {
   color: #fff;
 } 
 
-primary-header a:hover {
+.primary-header a:hover {
   color: #a9b2b9;
 }
 
@@ -242,11 +242,11 @@ Primary Footer
   font-weight: 400;
 }
 
-primary-footer a {
+.primary-footer a {
   color: #fff;
 } 
 
-primary-footer a:hover {
+.primary-footer a:hover {
   color: #a9b2b9;
 }
 
@@ -311,7 +311,7 @@ Speakers
   text-align: center;
 }
 
-.speakers {
+.speaker {
   margin-bottom: 44px;
 }
 
