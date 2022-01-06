@@ -321,6 +321,15 @@ Schedule
 =====================
 */
 
+table {
+  width: 100%;
+  margin-bottom: 44px;
+}
+
+table:last-child {
+  margin-bottom: 0;
+}
+
 /*
 =====================
 Venue
