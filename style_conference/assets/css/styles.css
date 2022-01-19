@@ -93,7 +93,7 @@ Rows
 }
 
 .row-alt {
-  background: #cbe2c1;
+  background: #c1d0e2;
   background: -webkit-linear-gradient(to right, #8ea4cf, #b3d7e5);
   background: -moz-linear-gradient(to right, #8ea4cf, #b3d7e5);
   background: linear-gradient(to right, #8ea4cf, #b3d7e5);
@@ -192,7 +192,7 @@ Buttons
 
 .btn-alt:hover {
   background: #fff;
-  color: #647188;
+  color: #668cc9;
 }
 
 /*
@@ -235,6 +235,8 @@ Primary Footer
 .primary-footer {
   padding-bottom: 44px;
   padding-top: 44px;
+  font-size: 14px;
+  color: #6c89db;
 }
 
 .primary-footer small {
@@ -360,6 +362,10 @@ td {
   width: 40%;
 }
 
+thead {
+  line-height: 44px
+}
+
 thead th {
   color: #647188;
   font-size: 24px;
@@ -463,5 +469,5 @@ font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, san
   font-size: 14px;
 }
 .btn-default:hover {
-  background: #a9b2b9;
+  background: #778da148;
 }
