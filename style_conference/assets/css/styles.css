@@ -195,6 +195,16 @@ Buttons
   color: #668cc9;
 }
 
+.btn-default {
+  border: 0;
+  background: #6c89db;
+  padding: 11px 30px;
+  font-size: 14px;
+}
+.btn-default:hover {
+  background: #778da148;
+}
+
 /*
 =======================
 Primary header
@@ -385,7 +395,7 @@ tbody td {
 }
 
 tbody td:first-of-type {
-  padding-right: 15;
+  padding-right: 15px;
 }
 
 tbody td:last-of-type {
@@ -460,14 +470,4 @@ font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, san
 }
 .register-group textarea {
   height: 78px;
-}
-
-.btn-default {
-  border: 0;
-  background: #6c89db;
-  padding: 11px 30px;
-  font-size: 14px;
-}
-.btn-default:hover {
-  background: #778da148;
 }
