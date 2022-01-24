@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    .grid-container1 {
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    background-color: #232121;
+    padding: 10px; 
+    position: relative;
+    right: 5px;
+    top: 100px;
+}
+
+.monitor {
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    background-color: #232121;
+    padding: 10px; 
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    font-size: 30px;
+    text-align: center;
+    float: left;
+}
+
+.screen {
+    background-color: lightblue;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 300px 660px 300px 660px;
+    font-size: 30px;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 18;
+}
+
+.backspace {
+    grid-column-start: 17;
+    grid-column-end: 18;
+}
+
+.sppecial-key {
+    grid-column-start: 17;
+    grid-column-end: 18;
+}
+
+.enter-key {
+    grid-column-start: 16;
+    grid-column-end: 18;
+}
+
+.right-shift-key {
+    grid-column-start: 16;
+    grid-column-end: 18;
+}
+
+.spacebar-key {
+    grid-column-start: 4;
+    grid-column-end: 10;
+}
+
+.up-arrow-key {
+    grid-column-start: 14;
+    grid-column-end: 14;
+}
+
+h1 {
+    color: white;
+}
+
+.monitor-logo {
+    grid-column-start: 9;
+    grid-column-end: 9;
+}
+
+</style>
+</head>
+<body>
+    
+    <div class="monitor" >
+    <div class="screen">Screen</div>
+    <h1 class="monitor-logo">ViewSonic</h1>
+    </div>
+    <div class="grid-container1">
+        <div class="grid-item">ESC</div>
+        <div class="grid-item">F1</div>
+        <div class="grid-item">F2</div>  
+        <div class="grid-item">F3</div>
+        <div class="grid-item">F4</div>
+        <div class="grid-item">F5</div>  
+        <div class="grid-item">F6</div>
+        <div class="grid-item">F7</div>
+        <div class="grid-item">F8</div>
+        <div class="grid-item">F9</div>  
+        <div class="grid-item">F10</div>  
+        <div class="grid-item">F11</div>
+        <div class="grid-item">F12</div>
+        <div class="grid-item">Home</div> 
+        <div class="grid-item">End</div>
+        <div class="grid-item">Insert</div>
+        <div class="grid-item">Delete</div>
+        <div class="grid-item">~</div>
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+        <div class="grid-item">0</div>
+        <div class="grid-item">-</div>
+        <div class="grid-item">+</div>
+        <div class="grid-item backspace">Backspace</div>
+        <div class="grid-item">Tab</div>
+        <div class="grid-item">Q</div>
+        <div class="grid-item">W</div>
+        <div class="grid-item">E</div>
+        <div class="grid-item">R</div>
+        <div class="grid-item">T</div>
+        <div class="grid-item">Y</div>
+        <div class="grid-item">U</div>
+        <div class="grid-item">I</div>
+        <div class="grid-item">O</div>
+        <div class="grid-item">P</div>
+        <div class="grid-item">[</div>
+        <div class="grid-item">]</div>
+        <div class="grid-item sppecial-key">\</div>
+        <div class="grid-item">Capslock</div>
+        <div class="grid-item">A</div>
+        <div class="grid-item">S</div>
+        <div class="grid-item">D</div>
+        <div class="grid-item">F</div>
+        <div class="grid-item">G</div>
+        <div class="grid-item">H</div>
+        <div class="grid-item">J</div>
+        <div class="grid-item">K</div>
+        <div class="grid-item">L</div>
+        <div class="grid-item">;</div>
+        <div class="grid-item">'</div>
+        <div class="grid-item enter-key">Enter</div>
+        <div class="grid-item">Shift</div>
+        <div class="grid-item">Z</div>
+        <div class="grid-item">X</div>
+        <div class="grid-item">C</div>
+        <div class="grid-item">V</div>
+        <div class="grid-item">B</div>
+        <div class="grid-item">N</div>
+        <div class="grid-item">M</div>
+        <div class="grid-item">,</div>
+        <div class="grid-item">.</div>
+        <div class="grid-item">/</div>
+        <div class="grid-item up-arrow-key">↑</div>
+        <div class="grid-item right-shift-key">Shift</div>
+        <div class="grid-item">Ctrl</div>
+        <div class="grid-item">⊞</div>
+        <div class="grid-item">Alt</div>
+        <div class="grid-item spacebar-key">Spacebar</div>
+        <div class="grid-item">Alt</div>
+        <div class="grid-item">Fn</div>
+        <div class="grid-item">Ctrl</div>
+        <div class="grid-item">←</div>
+        <div class="grid-item down-arrow-key">↓</div>
+        <div class="grid-item">→</div>
+    </div>
+
+</body>
+</html>
