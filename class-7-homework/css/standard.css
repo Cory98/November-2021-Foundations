@@ -1,0 +1,66 @@
+html, body {
+    font-family: sans-serif;
+    font-size: 3vh;
+    color: #303030;
+}
+
+h1 {
+    grid-area: header;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0.5em;
+    text-align: center;
+}
+
+.left {
+    grid-area: left;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0.5em;
+    text-align: center;
+}
+
+.middle {
+    grid-area: middle;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0.5em;
+    text-align: center;
+}
+
+.right {
+    grid-area: right;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0.5em;
+    text-align: center;
+}
+
+.footer-left {
+    grid-area: footer-left;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0.5em;
+    text-align: center;
+}
+
+.footer-right {
+    grid-area: footer-right;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0.5em;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    'header header header header'
+    'left middle middle right'
+    'footer-left footer-left footer-right footer-right';
+    grid-gap: .25em;
+    padding: .25em;
+    background-color: #00a000;
+    text-align: center;
+}
+
+div {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0.5em;
+    text-align: center;
+}
