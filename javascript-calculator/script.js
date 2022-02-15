@@ -3,7 +3,7 @@
     let screen = document.querySelector('.screen');
     let buttons = document.querySelectorAll('.btn');
     let clear = document.querySelector('.btn-clear');
-    let equal = document.querySelector('.btn-qual');
+    let equal = document.querySelector('.btn-equal');
 
     // retrieve data from numbers that are clicked
     buttons.forEach(function(button) {
