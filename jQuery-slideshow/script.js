@@ -21,7 +21,7 @@ function simpleSlider(element = '#simple-slider', auto = false, pause) {
 
     // Set currentSlide to first child
     var currentSlide = slides.first();
-    var currentSlideindex = 1;
+    var currentSlideIndex = 1;
 
     var autoPlay = null;
 
@@ -33,7 +33,7 @@ function simpleSlider(element = '#simple-slider', auto = false, pause) {
     function fadeNext() {
         currentSlide.removeClass('active').fadeOut(700);
 
-    if (currentSlideIndex == slidesCont) {
+    if (currentSlideIndex == slidesCount) {
         currentSlide = slides.first();
         currentSlide.delay(500).addClass('active').fadeIn(700);
         currentSlideIndex = 1;
@@ -53,7 +53,7 @@ function simpleSlider(element = '#simple-slider', auto = false, pause) {
     if (currentSlideIndex == 1) {
         currentSlide = slides.last();
         currentSlide.delay(500).addClass('active').fadeIn(700);
-        currentSlide = slidesCount;
+        currentSlideIndex = slidesCount;
     } else {
         currentSlideIndex--;
         currentSlide = currentSlide.prev();
@@ -84,7 +84,7 @@ function simpleSlider(element = '#simple-slider', auto = false, pause) {
     // Detect if user clicked on arrow for previous slide and fade previous slide if it did
     $(prevSlide).click(function(e) {
         e.preventDefault();
-        fadePrev()
+        fadePrev();
         AutoPlay();
     });
 
