@@ -3,6 +3,7 @@ html, body {
     font-family: Poppins, sans-serif;
     font-size: 2vh;
     color: white;
+    background-color: #f0f0f0;
 }
 
 header > span {
@@ -76,4 +77,41 @@ main a:hover {
     padding-bottom: calc(.5em + 3px);
     width: calc(20ch + 5px);
     background: linear-gradient(90deg, blue, lightblue, turquoise);
+}
+
+.teaser {
+    position: absolute;
+    top: 100vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    color: black;
+    display: flex;
+    width: 80%;
+}
+
+.teaser > div {
+    padding-left: 3em;
+    padding-right: 3em;
+    position: relative;
+}
+
+.teaser > div::after {
+    border-right: 1px solid #404040;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    left: 0;
+    top: 15%;
+}
+
+.teaser > div:last-child::after {
+    border-right: 0;
+}
+
+.teaser > div > h2 > i {
+    font-size: 0.08em;
+    color: turquoise;
+    margin-right: 0.25em;
 }
