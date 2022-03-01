@@ -41,6 +41,7 @@ header {
     font-weight: bold;
     border: solid 1px #786fa0;
     color: #bcb7d0;
+    align-items: start;
 }
 
 #maincontent {
@@ -51,6 +52,42 @@ header {
     margin: 0;
     padding-bottom: 50px !important;
     color: #bcb7d0;
+}
+
+.gcbrowse {
+    border: solid 1px #786fa0;
+    margin: 21px 0 -10px 0;
+    background-color: #302c40;
+}
+
+a, .fake_link {
+    color: #bcb7d0;
+    text-decoration: none;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+}
+
+table {
+    width: 100%;
+}
+
+thead{
+    text-align: left;
+}
+
+table thead td, table thead th {
+    font-weight: bold;
+    background-color: #47425c;
+}
+
+table td, table th {
+    vertical-align: top;
+    padding: 3px;
+}
+
+.gcbrowse .tc_score {
+    padding-left: 30px;
+    width: 70px;
 }
 
 .contentbox {
@@ -73,11 +110,12 @@ header {
     left: 9px;
 }
 
-div.mainbox, div.threelayout>div {
+div.mainbox {
     margin: 21px 0 -10px 0;
     padding: 5px;
     border: solid 1px #786fa0;
     background: #302c40;
+    margin-bottom: 20px;
 }
 
 #menulist {
