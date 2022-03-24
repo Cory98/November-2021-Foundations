@@ -65,7 +65,7 @@ h1 {
 
 nav {
     position: absolute;
-    top: 670px;
+    top: 90vh;
     left: 900px;
     color: #efa214;
     width: auto;
@@ -74,6 +74,8 @@ nav {
 nav>a {
     color: #efa214;
     font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    text-shadow: 2px 2px 2px #423929;
     font-size: 30px;
 }
 
@@ -100,12 +102,109 @@ nav>a:nth-child(3) {
 @keyframes spin {
     0% { transform: rotateY(0deg); }
     100% { transform: rotateY(360deg); }
-    0% { transform: rotateY(0deg); }
-}
-
-@keyframes spin {
-    0% { transform: rotateY(0deg); }
-    100% { transform: rotateY(360deg); }
-    0% { transform: rotateY(0deg); }
 }
 /* netflex flip */
+
+/* Schedule popup */
+.button {
+    border-radius: 20px/50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    color: #efa214;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 70px auto;
+    padding: 15px;
+    border: 2px;
+    border-style: solid;
+    border-color: #efa214;
+    background: rgb(0, 0, 0);
+    opacity: 0.8;
+    border-radius: 10px;
+    width: 32%;
+    position: relative;
+    top: 200px;
+    transition: all 5s ease-in-out;
+}
+
+.popup .close {
+    position: absolute;
+    bottom: 135px;
+    left: 505px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup .content {
+    justify-content: space-between;
+    max-height: 30%;
+    overflow: auto;
+    color: #efa214;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+}
+/* Schedule popup */
+
+/* contact popup */
+.contact {
+    position: fixed;
+    left: -700px;
+    top: 350px;
+    transform: translate(-50%, -50%) rotateZ(0);
+    height: 60px;
+    width: 240px;
+    padding: 10px;
+    border: 3px solid #efa214;
+    color: #efa214;
+    background: rgb(0, 0, 0);
+    opacity: 0.8;
+    border-radius: 10px;
+    transition: all 2s;
+}
+
+#close {
+    position: relative;
+    left: 77px;
+    bottom: 22px;
+}
+
+.number {
+    position: relative;
+    top: 15px;
+    left: 35px;
+    font-size: 25px;
+    color: #efa214;
+}
+
+.show-contact {
+    left: 50%;
+    transform: translate(-50%, -50%) rotateZ(720deg);
+}
+/* contact popup */
+

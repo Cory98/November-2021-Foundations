@@ -7,7 +7,7 @@
     <title>Orange is the new Cat</title>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/fontawesome.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/standard.css">
     <link rel="stylesheet" media="screen" href="css/mobile.css">
 </head>
@@ -26,13 +26,34 @@
         <nav>
             <a class="colour2" href="#home">Home</a>
             <a class="colour2" href="#about">About</a>
-            <a class="colour2" href="#schedule" onclick=schedule()>Schedule</a>
-            <a class="colour2" href="#contact">Contact</a>
+            <a class="button" href="#popup1">Schedule</a>
+            <a id="spin-contact" class="colour2" href="#contact">Contact</a>
         </nav>
+
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                <a class="close" href="#"><img src="images/close.png" alt="close button"></a>
+                <div class="content">
+                    <p>Silly kitty</p> <p>The first episode in which we <br> meet a very silly kitty</p> <p>07/05/2016</p>
+                </div>
+                <div class="content">
+                    <p>trouble in <br> orange</p> <p>Silly kitty gets lost and spends the <br> night in lockup</p> <p>07/12/2016</p>
+                </div>
+                <div class="content">
+                    <p>Claws of <br> fury</p> <p>Ninja cat attacks the home and <br> silly kitty must defend his family</p> <p>07/19/2016</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="contact" id="contact">
+            <a  class="number"href="#">(402)-555-5555</a>
+            <a id="close" href="#"><img src="images/close.png" alt="close button"><i class="fa-brands fa-facebook-square"></i></a>
+        </div>
+        
     </article>
     <article id="about">
         <div class="page2">Kitty is no ordinary kitten. He's a <br>  super-hero, too!</div>
     </article>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
