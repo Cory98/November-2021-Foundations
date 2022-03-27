@@ -1,0 +1,208 @@
+@media only screen and (max-width: 700px){
+    * {
+        margin: 0;
+    }
+    #home {
+        background-image: url(../images/kitten-v.jpg);
+    }
+    
+    #about {
+        background-image: url(../images/kitten-flying-v.jpg);
+    }
+    
+    article {
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .page2 {
+        display: inline-block;
+        position: relative;
+        width: 25vw;
+        top: 13vh;
+        left: 32vw;
+        font-size: 10px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        text-shadow: 0.3px 0.3px 0.3px #fffbf5;
+    }
+
+    .title {
+        position: fixed;
+        top: 1px;
+        top: 0;
+        left: 0;
+    }
+
+    .colour {
+        color: #efa214;
+        font-size: 20px;
+        font-family: 'Montserrat', sans-serif;
+        text-shadow: 2px 2px 2px #423929;
+    }
+
+    .colour3 {
+        font-size: 10px;
+        position: relative;
+        margin-left: 3vw;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        text-shadow: 0.3px 0.3px 0.3px #fffbf5;
+    }
+
+    h1 {
+        font-size: 20px;
+        position: relative;
+        margin-left: 2vw;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .spin {
+        display: none;
+        margin-top: 20px;
+        position: relative;
+        top: 7px;
+    }
+
+    .spin-mobile {
+        margin-top: 6vh;
+        top: 7px;
+    }
+
+    .spin-mobile:hover {
+        animation: spin 0.8s linear;
+    }
+
+    nav {
+        display: flex;
+        float: left;
+        position: absolute;
+        top: 95vh;
+        left: 28vw;
+        color: #efa214;
+        width: auto;
+    }
+
+    nav>a {
+        color: #efa214;
+        font-family: 'Montserrat', sans-serif;
+        text-decoration: none;
+        text-shadow: 2px 2px 2px #423929;
+        font-size: 4vw;
+    }
+
+    nav>a:first-child {
+        position: relative;
+        margin-right: 3vw;
+    }
+
+    nav>a:nth-child(2) {
+        position: relative;
+        margin-right: 3vw;
+    }
+
+    nav>a:nth-child(3) {
+        position: relative;
+        margin-right: 3vw;
+    }
+
+    nav>a:last-child {
+        position: relative;
+        margin-right: 3vw;
+    }
+
+    /* Schedule popup */
+    .overlay {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        transition: opacity 500ms;
+        visibility: hidden;
+        opacity: 0;
+}
+
+    .overlay:target {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .popup {
+        margin: 70px auto;
+        padding: 5px;
+        border: 2px;
+        border-style: solid;
+        border-color: #efa214;
+        background: rgb(0, 0, 0);
+        opacity: 0.8;
+        border-radius: 5px;
+        width: 39%;
+        position: relative;
+        top: 200px;
+        transition: all 5s ease-in-out;
+    }
+
+    .popup .close {
+        position: absolute;
+        bottom: 20vw;
+        left: 39vw;
+        transition: all 200ms;
+        font-size: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #333;
+    }
+
+    .popup .content {
+        justify-content: space-between;
+        max-height: 30%;
+        overflow: auto;
+        color: #efa214;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 7px;
+        display: flex;
+        justify-content: space-between;
+    }
+    /* Schedule popup */
+
+    /* contact popup */
+    .contact {
+        position: fixed;
+        left: -700px;
+        top: 350px;
+        transform: translate(-50%, -50%) rotateZ(0);
+        height: 11vh;
+        width: 30vw;
+        padding: 10px;
+        border: 3px solid #efa214;
+        color: #efa214;
+        background: rgb(0, 0, 0);
+        opacity: 0.8;
+        border-radius: 10px;
+        transition: all 2s;
+    }
+
+    #close {
+        position: relative;
+        left: 28vw;
+        bottom: 6vh;
+    }
+
+    .number {
+        position: relative;
+        top: 1vh;
+        left: 2vw;
+        font-size: 4vw;
+        color: #efa214;
+    }
+
+    .show-contact {
+        left: 50%;
+        transform: translate(-50%, -50%) rotateZ(720deg);
+    }
+    /* contact popup */
+}

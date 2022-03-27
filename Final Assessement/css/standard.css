@@ -20,12 +20,14 @@ article {
 }
 
 .page2 {
+    display: inline;
     position: relative;
     top: 130px;
     left: 400px;
     font-size: 30px;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
+    font-weight: 600;
+    text-shadow: 0.5px 0.5px 0.5px #fffbf5;
 }
 
 .title {
@@ -63,10 +65,19 @@ h1 {
     top: 7px;
 }
 
+@media screen and (min-width: 700px){
+    .spin-mobile {
+        display: none;
+        margin-top: 6vh;
+        top: 7px;
+    }
+    
+}
+
 nav {
     position: absolute;
     top: 90vh;
-    left: 900px;
+    left: 50vw;
     color: #efa214;
     width: auto;
 }
@@ -106,16 +117,6 @@ nav>a:nth-child(3) {
 /* netflex flip */
 
 /* Schedule popup */
-.button {
-    border-radius: 20px/50px;
-    text-decoration: none;
-    cursor: pointer;
-    transition: all 0.3s ease-out;
-    color: #efa214;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
-}
-
 .overlay {
     position: fixed;
     top: 0;
@@ -149,8 +150,8 @@ nav>a:nth-child(3) {
 
 .popup .close {
     position: absolute;
-    bottom: 135px;
-    left: 505px;
+    bottom: 18vh;
+    left: 33vw;
     transition: all 200ms;
     font-size: 30px;
     font-weight: bold;
@@ -207,4 +208,3 @@ nav>a:nth-child(3) {
     transform: translate(-50%, -50%) rotateZ(720deg);
 }
 /* contact popup */
-
