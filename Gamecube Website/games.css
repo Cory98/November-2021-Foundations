@@ -53,6 +53,39 @@ header {
     color: #bcb7d0;
 }
 
+.gctabs {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    height: 22px;
+    margin: 20px 0 -22px 0;
+    padding: 0;
+}
+
+div.gctabs>ul {
+    list-style-type: none;
+}
+
+div.gctabs>ul>li>a {
+display: inline-block;
+box-sizing: border-box;
+height: 21px;
+padding: 1px 7px 0 7px;
+border: 1px solid #786fa0;
+border-bottom: none;
+background-color: #302c40;
+}
+
+div.gctabs>ul>li {
+    display: inline-block;
+    margin: 0 0 0 10px;
+}
+
+div.gctabs>ul>li:nth-child(1) {
+    margin-left: 0 !important;
+}
+
 .gcbrowse {
     border: solid 1px #786fa0;
     margin: 21px 0 -10px 0;
@@ -118,7 +151,7 @@ div.mainbox {
     padding: 5px;
     border: solid 1px #786fa0;
     background: #302c40;
-    margin-bottom: 20px;
+    margin: 21px 0 -10px 0;
 }
 
 #menulist {
@@ -136,10 +169,14 @@ a {
     background-color: #302c40;
     border: solid 1px #786fa0;
     color: #bcb7d0;
-    font-size: 12px;
+    font-size: 15px;
     padding: 4px;
     margin-bottom: 5px;
     text-align: center;
+}
+
+#support>b {
+    color: #ddd;
 }
 
 #menulist div.menubox {
@@ -207,8 +244,8 @@ footer {
     margin: 15px auto 0 auto;
     text-align: center;
     color: #302c40;
-    left: 700px;
-    top: 1600px;
+    left: 45vw;
+    top: 130vh;
 }
 
 /* visited link */

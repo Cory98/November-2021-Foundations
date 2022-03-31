@@ -71,7 +71,7 @@ header {
 
 .contentbox>div>p {
     position: relative;
-    left: 9px;
+    left: 12px;
 }
 
 div.mainbox, div.threelayout>div {
@@ -96,10 +96,14 @@ a {
     background-color: #302c40;
     border: solid 1px #786fa0;
     color: #bcb7d0;
-    font-size: 12px;
+    font-size: 15px;
     padding: 4px;
     margin-bottom: 5px;
     text-align: center;
+}
+
+#support>b {
+    color: #ddd;
 }
 
 #menulist div.menubox {
@@ -168,8 +172,8 @@ footer {
     margin: 15px auto 0 auto;
     text-align: center;
     color: #302c40;
-    left: 700px;
-    top: 1500px;
+    left: 45vw;
+    top: 110vh;
 }
 
 /* visited link */
