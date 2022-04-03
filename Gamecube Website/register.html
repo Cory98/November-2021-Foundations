@@ -30,15 +30,16 @@
                 <form id>
                     <fieldset>
                         <table class="formtable">
-                        <tr class="newfield">
+                        <tr>
                             <td class="label"><label for="username">Username</label></td>
                             <td class="field">
                             <input type="text" class="text" tabindex="10" minlength="2" maxlength="15" required="" pattern="(?:^(?!-*[a-zA-Z][0-9]+-*$)[a-zA-Z0-9-]*$)" id="username"><br>Preferred username. Must be between 2 and 15 characters long and consist entirely of alphanumeric characters or a dash.</td>
                         </tr>
-                        <tr class="newfield">
-                            <td class="label">
-                            <label for="gcs">Answer</label></td>
-                            <td class="field"><input type="text" class="text" tabindex="10" id="gcs" name="gcs"></td>
+                        <tr >
+                            <td class="label"><label for="email">E-Mail</label></td>
+                            <td class="field"><input type="text" class="text" tabindex="10" maxlength="254" required="" pattern="(?:^[-\+\.#\$=\w]+@(?:(?:[a-zA-Z0-9][\w-]*\.)+[a-zA-Z][a-zA-Z0-9-]{1,25}\.?)$)" id="email" name="email">
+                        </tr>
+                        <tr>
                         </tr>
                         </table>
                         </div>
