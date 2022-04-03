@@ -78,7 +78,7 @@
     nav {
         display: flex;
         float: left;
-        position: absolute;
+        position: fixed;
         top: 95vh;
         left: 28vw;
         color: #efa214;

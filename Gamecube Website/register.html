@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>GameCubes</title>
-        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="register.css">
         
         <style>
         body {
@@ -26,42 +26,36 @@
         
         <section id="maincontent">
             <div class="mainbox">
-                <h1>Exclsuive Games</h1>
-                <p class="screenshots">
-                    <img class="mario spin" src="images/paper mario.png" alt="orange gamecube" width="80" height="90">
-                    <img src="images/thousand year door screenshot.jpg" alt="paper mario the thousand year door" width="200" height="150">
-                    <img src="images/pikmin 2.jpg" alt="pikmin 2" width="200" height="150">
-                    <img src="images/city trial map2.png" alt="kirby air ride" width="200" height="150">
-                    <img src="images/star fox assult.png" alt="star fox assault" width="200" height="150">
-                    <img src="images/batwars.jpg" alt="battalion wars" width="200" height="150">
-                    <img class="peach spin" src="images/paper peach.png" alt="orange gamecube" width="80" height="90">
-                </p>
-            </div>
-            <div class="contentbox">
-                <div>
-                    <h1>Consoles</h1>
-                    <p>
-                        <img src="images/gamecube orange.jpg" alt="orange gamecube" width="130" height="90">
-                        <img src="images/gamecube tales edition.jpg" alt="tales edition gamecube" width="130" height="90">
-                        <img src="images/gamecube baseball edition.jfif" alt="baseball gamecube" width="130" height="90">
-                    </p>
-                </div>
-                <div>
-                    <h1>Controllers</h1>
-                    <p>
-                        <img src="images/gamecube controller Gundam.jpg" alt="gundam controller" width="130" height="90">
-                        <img src="images/gamecube controller wario.jpg" alt="wario controller" width="130" height="90">
-                        <img src="images/gamecube controller emerald blue.jpg" alt="emerald blue controller" width="130" height="90">
-                    </p>
-                </div>
-                <div>
-                    <h1>Accessories</h1>
-                    <p>
-                        <img src="images/GameBoy-Player.jpg" alt="gameboy player" width="130" height="90">
-                        <img src="images/gamecube screen.jpg" alt="gamecube screen" width="130" height="90">
-                        <img src="images/Nintendo-GameCube-Network-Adapters.jpg" alt="gamecube network adapter" width="130" height="90">
-                    </p>
-                </div>
+                <h1>Create an Account</h1>
+                <form id>
+                    <fieldset>
+                        <table class="formtable">
+                        <tr class="newfield">
+                            <td class="label"><label for="username">Username</label></td>
+                            <td class="field">
+                            <input type="text" class="text" tabindex="10" minlength="2" maxlength="15" required="" pattern="(?:^(?!-*[a-zA-Z][0-9]+-*$)[a-zA-Z0-9-]*$)" id="username"><br>Preferred username. Must be between 2 and 15 characters long and consist entirely of alphanumeric characters or a dash.</td>
+                        </tr>
+                        <tr class="newfield">
+                            <td class="label"><label for="email">E-Mail</label></td>
+                            <td class="field"><input type="text" class="text" tabindex="10" maxlength="254" required="" pattern="(?:^[-\+\.#\$=\w]+@(?:(?:[a-zA-Z0-9][\w-]*\.)+[a-zA-Z][a-zA-Z0-9-]{1,25}\.?)$)" id="email" name="email"><br><br><br><br>
+                            </span>Anti-bot question: What colour was the GameCube first released in? (Hint: its the primary colour theme of this site)</td>
+                        </tr>
+                        <tr class="newfield">
+                            <td class="label">
+                            <label for="gcs">Answer</label></td>
+                            <td class="field"><input type="text" class="text" tabindex="10" id="gcs" name="gcs"></td>
+                        </tr>
+                        </table>
+                        </div>
+                        <div class="mainbox">
+                            <fieldset class="submit">
+                                <span>
+                                    <input type="button" id="submit" class="submit" tabindex="10" value="Submit">
+                                </span>
+                            </fieldset>
+                        </div>
+                    </fieldset>
+                </form>
             </div>
         </section>
 
@@ -118,7 +112,7 @@
         <footer>
             <a href="https://github.com/Cory98/November-2021-Foundations/tree/main/Gamecube%20Website">November-2021-Foundations</a>
             <br>
-            <a href="spaceworld2000.html">Space World 2000</a>_______<a href="">About Us</a>
+            <a href="">Space World 2000</a>_______<a href="">About Us</a>
         </footer>
         <script src="cube.js"></script>
     </body>

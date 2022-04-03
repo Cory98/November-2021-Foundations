@@ -75,7 +75,7 @@ h1 {
 }
 
 nav {
-    position: absolute;
+    position: fixed;
     top: 90vh;
     left: 50vw;
     color: #efa214;
@@ -150,7 +150,7 @@ nav>a:nth-child(3) {
 
 .popup .close {
     position: absolute;
-    bottom: 18vh;
+    bottom: 20vh;
     left: 33vw;
     transition: all 200ms;
     font-size: 30px;
