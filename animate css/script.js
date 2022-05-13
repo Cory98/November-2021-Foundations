@@ -4,7 +4,7 @@ $(document).ready(function() {
         var docViewBottom = docViewTop + $(window).height();
 
         var elemTop = $(elem).offset().top;
-        var elemBottom = elemtop + $(elem).height();
+        var elemBottom = elemTop + $(elem).height();
 
         return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop)); 
     }
@@ -15,5 +15,46 @@ $(document).ready(function() {
                 $(this).addClass('animate__fadeInLeft');
             }
         });
+    });
+
+    $('button').on("click", function() {
+        if ($("name").val() === "") {
+            $("#name")
+            .addClass("form-error animate__animated animate__shakeX")
+            .one (
+                "webskitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend",
+                function() {
+                    $(this).removeClass("animate__animated animate__shakeX")
+                }
+            );
+        } else {
+            $("#name").removeClass("form-error");
+        }
+
+        if ($("#email").val() === "") {
+            $("#email")
+            .addClass("form-error animate__animated animate__shakeX")
+            .one (
+                "webskitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend",
+                function() {
+                    $(this).removeClass("animate__animated animate__shakeX")
+                }
+            );
+        } else {
+            $("#email").removeClass("form-error");
+        }
+
+        if ($("message").val() === "") {
+            $("#messagee")
+            .addClass("form-error animate__animated animate__shakeX")
+            .one (
+                "webskitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend",
+                function() {
+                    $(this).removeClass("animate__animated animate__shakeX")
+                }
+            );
+        } else {
+            $("#message").removeClass("form-error");
+        }
     });
 });

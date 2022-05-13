@@ -124,6 +124,68 @@ header span::after {
     }
 }
 
+    .click-animations {
+        margin-top: 35px;
+        padding-bottom: 20px;
+        background: #f6f8fa;
+    }
+
+    .click-animations {
+        display: block;
+        margin: 20px auto;
+        padding: 10px;
+        height: 50px;
+        width: 50%;
+        font-size: 30px;
+        outline: none;
+        border: 2px solid transparent;
+        transition: 0.3;
+    }
+
+    .click-animations textarea {
+        display: block;
+        margin: 20px auto;
+        padding: 10px;
+        width: 50%;
+        font-size: 30px;
+        outline: none;
+        border: 2px solid transparent;
+        resize: none;
+        transition: 0.3;
+    }
+
+    .click-animations input:focus,
+    .click-animations textarea:focus {
+        border-color: #30cc8b;
+    }
+
+    .click-animation button {
+        display: block;
+        margin: 20px auto;
+        padding: 10px;
+        width: 50%;
+        font-size: 30px;
+        border: none;
+        outline: none;
+        background: #30cc8b;
+        cursor: pointer;
+        transition: 0.2;
+    }
+
+    .click-animation button:active {
+        transform: scale(0.95);
+    }
+
+    .form-error {
+        border-color: #f46036 !important;
+    }
+
+    .click-animation input,
+    .click-animation textarea,
+    .click-animation button {
+        width: 80%;
+    }
+
 @media (max-width: 475) {
     .new-section {
         font-size: 2.5em;
